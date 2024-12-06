@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Web Design-CCC100</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Photos/logo.png"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="about.html.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h2>About Us</h2>
+        
+    </section>
+
+<!---about us content-->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h2>Mindanao State University At Naawan</h2>
+                <p>Mindanao State University at Naawan was established in 1964 as a field laboratory of the MSU College of Fisheries to support freshwater aquaculture programs. It began with training on brackishwater pond construction and pioneering research on Penaeus monodon hatchery techniques under Dean Domiciano Kapili Villaluz. The successful results secured funding for further prawn culture studies, leading to the development of a pilot laboratory and inspiring commercial aquaculture ventures. Over the years, the institution expanded its scope, integrating research, training, and academic programs, such as marine biology and fisheries technology, and reorganizing its structure to accommodate its growth.
+                <br> By 1988, MSU Naawan became an autonomous unit of the MSU System, evolving into a center for marine sciences and fisheries education in Mindanao. As of 2019, it is led by a Chancellor with a robust administrative framework supporting research, extension, and instruction.</p>
+                    <a href="index.html" class="hero-btn red-btn">EXPLORE NOW</a>
+
+            </div>
+            <div class="about-col">
+                <img src="Photos/aboutus2.jpg">
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+<!---Footer-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> MSU at Naawan was established in the Municipality of Naawan, Misamis Oriental in 1971.
+        <br> It is involved in extensive training and research in fisheries and aquaculture.</p>
+            
+     <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <p>Made with <i class="fa-solid fa-heart"></i> by Group 4</p>
+
+
+
+
+    </section>
+
+
+
+
+
+
+  <!------Javascript for Toggle Menu----->
+
+    <script>
+
+var navLinks = document.getElementById("navLinks");
+var nav = document.querySelector("nav");
+
+function showMenu() {
+    navLinks.style.right = "0";
+    nav.classList.add("active"); 
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+    nav.classList.remove("active"); 
+}
+
+
+    </script>
+    
+</body>
+</html>
