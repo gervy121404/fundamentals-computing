@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Web Design-CCC100</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Photos/logo.png"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h2>Our Facilities</h2>
+        
+    </section>
+
+    <!--Facilities-->
+    <section class="facilities">
+        <h2>Our Facilities</h2>
+        <p>Mindanao State University at Naawan (MSU Naawan) has a variety of facilities, including:</p>
+    
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Photos/ITCenter.jpg">
+                <h3>- Information Technology Center</h3>
+                <p>The IT Center occupies an area which is a part of the Library. The Center provides high-quality information technology and communications
+                <br> resources and services through shared resources, common infrastructure, and common functions in support of the administrative and academic activities of the University.
+                <br> This office is responsible for the development and maintenance of computerized systems used by the different offices of the University,
+                <br> particularly in the area of the student information, student accounts and grade ledger maintenance.  </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Photos/ScienceLab.jpg">
+                <h3>- Science Laboratory</h3>
+                <p>Students who are enrolled in laboratory classes can avail of the laboratory services and privileges subject to laboratory rules and regulations.
+                <br> It open on weekdays from 8:00-12:00 Noon and 1:00-5:00 PM, and is supervised by the laboratory custodian. The students can avail of the following:
+                <br>Laboratory apparatus and materials; and Chemicals and reagents.  </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Photos/TSAC.jpg">
+                <h3>- Training and Student Activity Center</h3>
+                <p>The TSAC is a community center of MSU Naawan, which is envisioned to be a center where the various multidimensional development of the students will be addressed. In its completion, 
+                <br>it will serve as a career development center, counseling center, co-curricular and extracurricular activity center, area for student council offices, alumni relations office, and food services.  </p>
+            </div>
+    
+        </div>
+    
+    
+    </section>
+    
+    
+    <section class="facilities1">
+        <h2>Our Facilities</h2>
+        <p>Mindanao State University at Naawan (MSU Naawan) has a variety of facilities, including:</p>
+    
+        <div class="row">
+        <div class="facilities-col">
+                <img src="Photos/fishprocess.png">
+                <h3>- Fish Processing Plant</h3>
+                <p>The Fish Processing Plant is a facility for processing fish and fish products. It is located adjacent to the School of Marine Fisheries and Technology (SMFT) Building.
+                <br> This is provided with screen, a lavatory with water connection. It has equipment and kitchen accessories where food processing laboratory courses are held.  </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Photos/functionhouse.png">
+                <h3>- Function Houase</h3>
+                <p>The Function Hall, which is oftentimes called the Function House of  MSU Naawan, is a large conference hall that hosts to a variety of school activities such school meetings, seminars, workshops, student trainings, and commencement ceremonies.
+                <br> The Function Hall is also open to the community at an affordable rental fee (ranging from 1200-2000) for other non-academic related activities such as weddings, parties, banquet reception, and other social events.  </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Photos/Research Facilities and Laboratories.png">
+                <h3>- Research Facilities and Laboratories</h3>
+                <p>MSU Naawan is a higher learning institution that renders three-pronged services to the academic community: Instruction, research, and extension. To provide excellent instructional services to the students, MSU Naawan has research laboratories designed for conducting experimental
+                <br> research division, with competent technicians and researchers who provide the students the necessary assistance in conducting specific researches in the field of Natural Sciences.   </p>
+            </div>
+    
+        </div>
+
+        <div class="comment-box">
+            <h2>Leave a comment</h2>
+
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+
+            </form>
+
+        </div>
+    
+    
+    
+    </section>
+    
+
+
+
+
+<!---Footer-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p> MSU at Naawan was established in the Municipality of Naawan, Misamis Oriental in 1971.
+        <br> It is involved in extensive training and research in fisheries and aquaculture.</p>
+            
+     <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <p>Made with <i class="fa-solid fa-heart"></i> by Group 4</p>
+
+
+
+
+    </section>
+
+
+
+
+
+
+  <!------Javascript for Toggle Menu----->
+
+    <script>
+
+var navLinks = document.getElementById("navLinks");
+var nav = document.querySelector("nav");
+
+function showMenu() {
+    navLinks.style.right = "0";
+    nav.classList.add("active"); 
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+    nav.classList.remove("active"); 
+}
+
+
+    </script>
+    
+</body>
+</html>
